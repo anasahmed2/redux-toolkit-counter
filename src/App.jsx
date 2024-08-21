@@ -1,11 +1,10 @@
 import './App.css';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { increment, decrement } from './features/counter/counterSlice';
 import Button from './component/Button';
 
 function App() {
   const counterValue = useSelector(state => state.value)
-  const dispatch = useDispatch()
 
   return (
     <div className="w-full h-screen flex justify-center items-center flex-col bg-[#272727]">
